@@ -1,0 +1,415 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-columns: 2.16fr 1fr;
+    padding: 88px 112px;
+    font-family: "Red Hat Text";
+    background-color: hsl(13, 31%, 94%);
+    position: relative;
+    min-height: 100vh;
+}
+.des-para {
+    padding-bottom: 40px;
+    font-weight: 700;
+    color: hsl(14, 65%, 9%);
+    font-size: 40px;
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 35px;
+    column-gap: 23px;
+    margin-right: 32px;
+}
+.image-des {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+.cate-para {
+    color: hsl(12, 20%, 44%);
+    margin-bottom: 8px;
+}
+.name-para {
+    color: hsl(14, 65%, 9%);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.price-para {
+    color: hsl(14, 86%, 42%);
+    font-weight: 600;
+}
+.just-position {
+    position: relative;
+}
+.add-but {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid hsl(14, 65%, 9%);
+    display: flex;
+    align-items: center;
+    padding: 12px 26px;
+    gap: 9px;
+    white-space: nowrap;
+    background-color: hsl(20, 50%, 98%);
+    border-radius: 50px;
+    font-family: "Red Hat Text";
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease, border 0.3s ease;
+}
+.add-but:hover {
+    border: 1px solid hsl(14, 86%, 42%);
+    color: hsl(14, 86%, 42%);
+} 
+.added-div {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid hsl(14, 86%, 42%);
+    display: flex;
+    align-items: center;
+    padding: 12px 26px;
+    gap: 40px;
+    background-color: hsl(14, 86%, 42%);
+    color: hsl(20, 50%, 98%);
+    border-radius: 50px;
+    font-family: "Red Hat Text";
+    font-weight: 600;
+}
+.edit-icon{
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: hsl(14, 86%, 42%);
+    border: 1px solid hsl(20, 50%, 98%);
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+        border 0.3s ease;
+}
+.edit-icon:hover {
+    background-color: hsl(20, 50%, 98%);
+    border: 1px solid hsl(14, 86%, 42%);
+} 
+.edit-icon img {
+    transition: filter 0.3s ease;
+}
+.edit-icon:hover img {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(100%) saturate(600%) hue-rotate(1deg) brightness(95%) contrast(105%);
+}
+.cart-div {
+    padding: 32px 24px;
+    background-color: hsl(20, 50%, 98%);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+}
+.cart-headline {
+    font-weight: 700;
+    color: hsl(14, 86%, 42%);
+    width: 100%;
+    text-align: start;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+.confirm-para {
+    padding-top: 20px;
+    color: hsl(12, 20%, 44%);
+    font-weight: 600;
+}
+.product-div,
+.product-div-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.right-con {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.pro-name,
+.pro-name-1 {
+    color: hsl(14, 65%, 9%);
+    font-weight: 600;
+}
+.stats-div {
+    display: flex;
+    align-items: center;
+}
+.quantity-para,
+.quantity-para-1 {
+    color: hsl(14, 86%, 42%);
+    font-weight: 700;
+    padding-right: 16px;
+}
+.price-cart-para,
+.price-cart-para-1,
+.total-para {
+    padding-right: 8px;
+    color: hsl(12, 20%, 44%);
+}
+.total-para,
+.total-para-1 {
+    font-weight: 600;
+}
+.total-wuan-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0;
+}
+.remove-but {
+    width: 18px;
+    height: 18px;
+    border-radius: 41px;
+    border: 1px solid hsl(12, 20%, 44%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border 0.3s ease;
+}
+.remove-but:hover {
+    border: 2px solid hsl(14, 65%, 9%);
+}
+.remove-but img {
+    transition: filter 0.3s ease;
+}
+.remove-but:hover img {
+    filter: brightness(0) saturate(100%) invert(5%) sepia(89%) saturate(1194%) hue-rotate(345deg) brightness(93%) contrast(93%);
+}
+.order-total-para {
+    color: hsl(14, 65%, 9%);
+}
+.totla-price-para {
+    color: hsl(14, 65%, 9%);
+    font-weight: 700;
+    font-size: 24px;
+}
+.carbon-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 0px;
+    background-color: hsl(13, 31%, 94%);
+    margin-bottom: 24px;
+    border-radius: 12px;
+    color: hsl(14, 65%, 9%);
+    width: 100%;
+}
+b {
+    font-weight: 600;
+}
+.confirm-but {
+    width: 100%;
+    height: 53px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: hsl(14, 86%, 42%);
+    color: hsl(20, 50%, 98%);
+    font-weight: 400;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+.confirm-but:hover {
+    background-color: hsl(14, 86%, 29%);
+}
+
+.border-red { 
+    border: 2px solid hsl(14, 86%, 29%);
+}
+body.no-scroll {
+  overflow: hidden;
+  position: fixed; /* This prevents background scrolling */
+  width: 100%;
+}
+.confirm-div {
+  background-color: hsl(20, 50%, 98%);
+  padding: 40px;
+  position: fixed;
+  left: 50%;
+  top: 50%; /* Start from center (for short content) */
+  transform: translate(-50%, -50%); /* Default centering */
+  width: 592px;
+  max-width: 90%; /* Responsive cap */
+  max-height: calc(100vh - 40px); /* Prevents overflow with margins */
+  overflow-y: auto; /* Scrolls if content exceeds max-height */
+  border-radius: 11px;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Dynamic top positioning when content is tall */
+.confirm-div.tall-content {
+  top: 20px; /* Adds top margin */
+  bottom: 20px; /* Adds bottom margin */
+  transform: translateX(-50%); /* Only center horizontally */
+  max-height: calc(100vh - 40px); /* Viewport minus margins */
+}
+.confirm-icon {
+    width: 44px;
+    margin-bottom: 24px;
+}
+.oredr-confirmed-para {
+    color: hsl(14, 65%, 9%);
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.we-para {
+    color: hsl(12, 20%, 44%);
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 32px;
+}
+.border-div {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: hsl(13, 31%, 94%);
+    padding: 8px 24px 24px 24px; 
+}
+.product-div-1 {
+    padding:  16px 0 ;
+}
+.pro-img {
+    width: 48px;
+    border-radius: 8px;
+}
+.right-con-1 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.name-quan-div {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.pro-name-1,
+.price-cart-para-1,
+.quantity-para-1,
+.total-para-1 {
+    font-size: 12px;
+}
+.total-div {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.order-total {
+    font-size: 14px;
+    color: hsl(14, 65%, 9%);
+    font-weight: 400;
+}
+.total-due {
+    font-weight: 700;
+    color: hsl(14, 65%, 9%);
+}
+.start-but {
+    margin-top: 32px;
+    width: 100%;
+    height: 53px;
+    border: none;
+    border-radius: 50px;
+    background-color: hsl(14, 86%, 42%);
+    font-family: "Red Hat Text";
+    cursor: pointer;
+    font-weight: 600;
+    color: hsl(20, 50%, 98%);
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* grey with 50% opacity */
+    z-index: 999; /* below the confirmation box */
+}
+@media (max-width: 800px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 32px 24px 24px 24px;
+    }
+    .main-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-right: 0px;
+    }
+    .image-des {
+        height: 212px;
+    }
+    .pro-name,
+    .pro-name-1 {
+        font-size: 14px;
+    }
+    .quantity-para,
+    .quantity-para-1 {
+        font-size: 14px;
+    }
+    .price-cart-para,
+    .price-cart-para-1,
+    .total-para {
+        font-size: 14px;
+    }
+    .total-para-1 {
+        font-size: 14px;
+    }
+    .carbon-div {
+        padding: 16px 24px;
+        font-size: 13.5px;
+    }
+    .confirm-but {
+        font-size: 16px;
+    }
+    body.no-scroll {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+    }
+    .checkout-div {
+        width: 100%;
+    }
+    .confirm-div {
+        width: 100%; /* Full width */
+        max-width: 100%; /* Override previous max-width */
+        height: calc(100vh ); /* Full height minus top gap */
+        max-height: calc(100vh - 95px); /* Ensure it respects the gap */
+        top: 95px; /* Start below the 95px header */
+        left: 0;
+        transform: none; /* Remove centering */
+        border-top-left-radius: 11px; /* Optional: Remove rounded corners for full-screen look */
+        border-top-right-radius: 11px; /* Optional: Remove rounded corners for full-screen look */
+        border-bottom-right-radius: 0; /* Optional: Remove rounded corners for full-screen look */
+        border-bottom-left-radius: 0; /* Optional: Remove rounded corners for full-screen look */
+        padding: 20px; /* Reduce padding on small screens */
+    }
+    .oredr-confirmed-para {
+        font-size: 40px;
+    }
+}

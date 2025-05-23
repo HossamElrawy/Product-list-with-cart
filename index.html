@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsive viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon for browser tab -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" alt="Website favicon">
+  
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- Google Fonts preconnect for performance optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Fonts import -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  
+  <title>Product list with cart</title>
+</head>
+
+<body>
+  <!-- Main product listing section -->
+  <div>
+    <!-- Desserts category heading -->
+    <p class="des-para" aria-label="Desserts category">
+      Desserts
+    </p>
+    
+    <!-- Grid container for product items -->
+    <div class="main-grid js-main-grid" role="grid" aria-label="Product grid"></div>
+  </div>
+
+  <!-- Shopping cart section -->
+  <div class="cart-div js-cart-div" role="region" aria-label="Shopping cart"></div> 
+  
+  <!-- Checkout section -->
+  <div class="checkout-div js-checkout-div" role="region" aria-label="Checkout"></div>
+
+  <!-- JavaScript module -->
+  <script type="module" src="index.js"></script>
+</body>
+</html>
